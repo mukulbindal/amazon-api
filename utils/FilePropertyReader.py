@@ -13,7 +13,7 @@ def get_property(key):
         return None
 
 if properties_not_loaded:
-    file_path = "E:\\FastApiTutorial\\resources\\DEV\\application.properties"
+    file_path = "E:\\FastApiTutorial\\amazon-api\\resources\\DEV\\application.properties"
     with open(file_path, "r") as f:
         for line in f.readlines():
             key, value = line.split("=")

@@ -7,7 +7,7 @@ from amazon.PageParser import parse
 app = FastAPI()
 
 @app.get("/")
-def root():
+async def root():
     return {"name":"Hellow world"}
 
 @app.get("/api/v1/search/{key}")
